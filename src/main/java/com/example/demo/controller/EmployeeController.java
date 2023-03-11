@@ -20,5 +20,10 @@ public class EmployeeController {
 		return "employees/removed-employee-list";
 	}
 	
+	@GetMapping({"/employee-details"})
+	public String EmployeeDetails() {
+		return "employees/employee-details";
+	}
+	
 	
 }
