@@ -29,7 +29,7 @@
 							<div class="content-card shadow-sm">
 								<div class="row">
 									<div class="col-6">
-										<h5 class="fw-bold mb-3">Employee Details</h5>
+										<h2 class="fw-bold mb-3">Employee Details</h2>
 									</div>
 									<div class="col-6 text-end"></div>
 								</div>
@@ -106,18 +106,24 @@
 										</div>
 										<div>
 											<div class="row p-2">
-												<div class="col-2">
-													<h6>Full name</h6>
+												<div class="col-3">
+													<h4 style="font-weight: 900">Full name</h4>
 												</div>
-												<div class="col-6">
+												<div class="col-1">
+													<h4 style="font-weight: 900">-</h4>
+												</div>
+												<div class="col-8">
 													<p>Rex P Romeo</p>
 												</div>
 											</div>
 											<div class="row p-2">
-												<div class="col-2">
-													<h6>Description</h6>
+												<div class="col-3">
+													<h4 style="font-weight: 900">Description</h4>
 												</div>
-												<div class="col-6">
+												<div class="col-1">
+													<h4 style="font-weight: 900">-</h4>
+												</div>
+												<div class="col-8">
 													<p>
 														Lorem ipsum dolor sit amet, consectetur adipiscing
 														elit, sed do eiusmod tempor incididunt ut labore et
@@ -141,34 +147,46 @@
 												</div>
 											</div>
 											<div class="row p-2">
-												<div class="col-2">
-													<h6>Email</h6>
+												<div class="col-3">
+													<h4 style="font-weight: 900">Email</h4>
 												</div>
-												<div class="col-6">
+												<div class="col-1">
+													<h4 style="font-weight: 900">-</h4>
+												</div>
+												<div class="col-8">
 													<p>johndoe@gmail.com</p>
 												</div>
 											</div>
 											<div class="row p-2">
-												<div class="col-2">
-													<h6>Mobile</h6>
+												<div class="col-3">
+													<h4 style="font-weight: 900">Mobile</h4>
 												</div>
-												<div class="col-6">
+												<div class="col-1">
+													<h4 style="font-weight: 900">-</h4>
+												</div>
+												<div class="col-8">
 													<p>+974 0000 0000</p>
 												</div>
 											</div>
 											<div class="row p-2">
-												<div class="col-2">
-													<h6>Address</h6>
+												<div class="col-3">
+													<h4 style="font-weight: 900">Address</h4>
 												</div>
-												<div class="col-6">
+												<div class="col-1">
+													<h4 style="font-weight: 900">-</h4>
+												</div>
+												<div class="col-8">
 													<p>Doha, Qatar</p>
 												</div>
 											</div>
 											<div class="row p-2">
-												<div class="col-2">
-													<h6>Date of Birth</h6>
+												<div class="col-3">
+													<h4 style="font-weight: 900">Date of Birth</h4>
 												</div>
-												<div class="col-6">
+												<div class="col-1">
+													<h4 style="font-weight: 900">-</h4>
+												</div>
+												<div class="col-8">
 													<p>12 - 12 -2000</p>
 												</div>
 											</div>
@@ -176,26 +194,59 @@
 									</div>
 								</div>
 
-								<div class="position-relative mt-5">
-									<h5>Project History</h5>
+								<div
+									class="card position-relative mt-5"
+									style="padding: 30px; border-radius: opx !important"
+								>
+									<h3>Project History</h3>
 									<table id="dataTable" class="table table-striped w-100 mt-4">
 										<thead class="table-heading">
-											<tr>
-												<th>Name</th>
-												<th>Image</th>
-												<th>Address</th>
-												<th>Joint Date</th>
-												<th>Employee Status</th>
-												<th>Client</th>
-												<th>Accepted On</th>
-												<th>Action</th>
+											<tr style="text-align: center">
+												<th><h4 style="font-weight: 900">Company</h4></th>
+												<th><h4 style="font-weight: 900">Name</h4></th>
+												<th><h4 style="font-weight: 900">Position</h4></th>
+												<th>
+													<h4 style="font-weight: 900">Responsibility</h4>
+												</th>
+												<th><h4 style="font-weight: 900">Start Date</h4></th>
+												<th><h4 style="font-weight: 900">End Date</h4></th>
+												<th><h4 style="font-weight: 900">Rating</h4></th>
 											</tr>
 										</thead>
 										<tbody>
-											<tr>
-												<td colspan="1000" class="text-center">
-													<span class="d-block py-3">No result found!</span>
+											<tr style="text-align: center">
+												<td>Cape East Ltd.</td>
+												<td>Shell GTL Maintenance</td>
+												<td>Scaffold In-charge</td>
+												<td>
+													Scaffolding, Painting, Insulation and Refractory
 												</td>
+												<td>August 2022 t</td>
+												<td>Current Date</td>
+												<td>Pending</td>
+											</tr>
+											<tr style="text-align: center">
+												<td>Cape East Ltd.</td>
+												<td>DESCON – QAFCO-6 TURN AROUND</td>
+												<td>Project In-charge</td>
+												<td>
+													Scaffolding, Painting, Insulation and Refractory
+												</td>
+												<td>January 2022</td>
+												<td>July 2022</td>
+												<td>5.0/5.0</td>
+											</tr>
+											<tr style="text-align: center">
+												<td>Cape East Ltd.</td>
+												<td>QAFCO – Qatar Fertilizer Company</td>
+												<td>Project In-charge</td>
+												<td>
+													Scaffolding Maintenance and Insulation/Painting
+													Projects
+												</td>
+												<td>May 2018</td>
+												<td>January 2022</td>
+												<td>5.0/5.0</td>
 											</tr>
 										</tbody>
 									</table>
@@ -204,28 +255,48 @@
 									</div>
 								</div>
 
-								<div class="position-relative mt-5">
-									<h5>Client History</h5>
+								<div
+									class="card position-relative mt-5"
+									style="padding: 30px; border-radius: opx !important"
+								>
+									<h3>Client History</h3>
 									<table id="dataTable" class="table table-striped w-100 mt-4">
 										<thead class="table-heading">
-											<tr>
-												<th>Name</th>
-												<th>Logo</th>
-												<th>Company Reg No</th>
-												<th>Company Address</th>
-												<th>Registere Date</th>
-												<th>Mobile No</th>
-												<th>Added Date</th>
-												<th>No. of Employees</th>
-												<th>No. of Projects</th>
-												<th>Action</th>
+											<tr style="text-align: center">
+												<th><h4 style="font-weight: 900">Name</h4></th>
+												<th><h4 style="font-weight: 900">Logo</h4></th>
+												<th>
+													<h4 style="font-weight: 900">Company Address</h4>
+												</th>
+												<th>
+													<h4 style="font-weight: 900">Registere Date</h4>
+												</th>
+												<th>
+													<h4 style="font-weight: 900">Mobile No</h4>
+												</th>
+												<th><h4 style="font-weight: 900">Start Date</h4></th>
+												<th>
+													<h4 style="font-weight: 900">No. of Employees</h4>
+												</th>
+												<th>
+													<h4 style="font-weight: 900">No. of Projects</h4>
+												</th>
+												<th>
+													<h4 style="font-weight: 900">Rating</h4>
+												</th>
 											</tr>
 										</thead>
 										<tbody>
-											<tr>
-												<td colspan="1000" class="text-center">
-													<span class="d-block py-3">No result found!</span>
-												</td>
+											<tr style="text-align: center">
+												<td>Cape East Ltd.</td>
+												<td><img src="${imgPath}/no-image-found.png" /></td>
+												<td>Doha Qatar</td>
+												<td>12-01-2020</td>
+												<td>+974 1234 1234</td>
+												<td>May 2021</td>
+												<td>50</td>
+												<td>10</td>
+												<td>4.8/5.0</td>
 											</tr>
 										</tbody>
 									</table>
@@ -234,25 +305,118 @@
 									</div>
 								</div>
 
-								<div class="position-relative mt-5">
-									<h5>Application History</h5>
+								<div
+									class="card position-relative mt-5"
+									style="padding: 30px; border-radius: opx !important"
+								>
+									<h3>Application History</h3>
 									<table id="dataTable" class="table table-striped w-100 mt-4">
 										<thead class="table-heading">
-											<tr>
-												<th>Name</th>
-												<th>Image</th>
-												<th>Address</th>
-												<th>Joint Date</th>
-												<th>Employee Status</th>
-												<th>Client</th>
-												<th>Accepted On</th>
-												<th>Action</th>
+											<tr style="text-align: center">
+												<th><h4 style="font-weight: 900">Company</h4></th>
+												<th><h4 style="font-weight: 900">Company Logo</h4></th>
+												<th>
+													<h4 style="font-weight: 900">Company Rating</h4>
+												</th>
+												<th><h4 style="font-weight: 900">Project</h4></th>
+												<th><h4 style="font-weight: 900">Position</h4></th>
+												<th>
+													<h4 style="font-weight: 900">Responsibility</h4>
+												</th>
+												<th>
+													<h4 style="font-weight: 900">Applied Date</h4>
+												</th>
+												<th>
+													<h4 style="font-weight: 900">Status</h4>
+												</th>
 											</tr>
 										</thead>
 										<tbody>
-											<tr>
-												<td colspan="1000" class="text-center">
-													<span class="d-block py-3">No result found!</span>
+											<tr style="text-align: center">
+												<td>Cape East Ltd.</td>
+												<td>
+													<img
+														src="${imgPath}/no-image-found.png"
+														style="display: block; margin: auto"
+													/>
+												</td>
+												<td>4.8/5.0</td>
+												<td>QAFCO – Qatar Fertilizer Company</td>
+												<td>Project In-charge</td>
+
+												<td>
+													Scaffolding Maintenance and Insulation/Painting
+													Projects
+												</td>
+												<td>12-01-2020</td>
+												<td>
+													<span
+														style="
+															background-color: rgb(208, 222, 0);
+															color: black;
+															padding: 10px;
+															border-radius: 5px;
+														"
+														>Pending</span
+													>
+												</td>
+											</tr>
+											<tr style="text-align: center">
+												<td>Cape East Ltd.</td>
+												<td>
+													<img
+														src="${imgPath}/no-image-found.png"
+														style="display: block; margin: auto"
+													/>
+												</td>
+												<td>4.8/5.0</td>
+												<td>QAFCO – Qatar Fertilizer Company</td>
+												<td>Project In-charge</td>
+
+												<td>
+													Scaffolding Maintenance and Insulation/Painting
+													Projects
+												</td>
+												<td>12-01-2020</td>
+												<td>
+													<span
+														style="
+															background-color: rgba(0, 54, 0);
+															color: white;
+															padding: 10px;
+															border-radius: 5px;
+														"
+														>Accepted</span
+													>
+												</td>
+											</tr>
+											<tr style="text-align: center">
+												<td>Cape East Ltd.</td>
+												<td>
+													<img
+														src="${imgPath}/no-image-found.png"
+														style="display: block; margin: auto"
+													/>
+												</td>
+												<td>4.8/5.0</td>
+												<td>QAFCO – Qatar Fertilizer Company</td>
+												<td>Project In-charge</td>
+
+												<td>
+													Scaffolding Maintenance and Insulation/Painting
+													Projects
+												</td>
+												<td>12-01-2020</td>
+												<td>
+													<span
+														style="
+															background-color: rgba(89, 0, 0);
+															color: white;
+															padding: 10px;
+															border-radius: 5px;
+														"
+														>Rejected</span
+													>
 												</td>
 											</tr>
 										</tbody>
