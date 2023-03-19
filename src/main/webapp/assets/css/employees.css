@@ -78,3 +78,9 @@
 	-o-object-fit: contain;
 	object-fit: contain;
 }
+.employee-details-rating-container {
+	border: 1px black solid;
+}
+.employee-details-personal-profile-container {
+	border: 1px black solid;
+}

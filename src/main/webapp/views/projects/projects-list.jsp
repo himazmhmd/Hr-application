@@ -6,7 +6,7 @@
 		<%@include file="../layout/header.jsp" %>
 		<link href="../../assets/css/employees.css" rel="stylesheet" />
 
-		<title>Client List</title>
+		<title>Projects List</title>
 
 		<link
 			rel="stylesheet"
@@ -29,7 +29,7 @@
 							<div class="content-card shadow-sm">
 								<div class="row">
 									<div class="col-6">
-										<h5 class="fw-bold mb-3">Client List</h5>
+										<h5 class="fw-bold mb-3">Projects List</h5>
 									</div>
 									<div class="col-6 text-end">
 										<button class="btn btn-sm btn-primary btn-add-employee">
@@ -37,7 +37,7 @@
 												class="menu-icon mdi mdi-account-multiple-plus-outline"
 												style="color: white; margin: 10px"
 											></i
-											>Add Client
+											>Add Projects
 										</button>
 									</div>
 								</div>
@@ -46,14 +46,10 @@
 										<thead class="table-heading">
 											<tr>
 												<th>Name</th>
-												<th>Logo</th>
-												<th>Company Reg No</th>
-												<th>Company Address</th>
-												<th>Registere Date</th>
-												<th>Mobile No</th>
-												<th>Added Date</th>
-												<th>No. of Employees</th>
-												<th>No. of Projects</th>
+												<th>Company</th>
+												<th>Date</th>
+												<th>No Of Employees Needed</th>
+												<th>Completion Date</th>
 												<th>Action</th>
 											</tr>
 										</thead>
@@ -74,8 +70,8 @@
 
 						<div
 							class="modal fade"
-							id="addCompanyModal"
-							aria-labelledby="addCompanyModal"
+							id="addProjectsModal"
+							aria-labelledby="addProjectsModal"
 							aria-hidden="true"
 						>
 							<div class="modal-dialog modal-dialog-centered">
@@ -91,7 +87,7 @@
 										"
 									>
 										<h3 class="modal-title" style="font-weight: 700">
-											Add New Client
+											Add New Project
 										</h3>
 									</div>
 									<div
@@ -100,44 +96,16 @@
 										style="height: auto; width: auto"
 									>
 										<h4 style="text-align: center">
-											Please Fill THe Above Details of the Company to Add an
-											Client
+											Please Fill THe Above Details to Add an Project
 										</h4>
 
-										<div class="row add-new-employee-form-container">
-											<div class="d-flex justify-content-center mb-4">
-												<div class="avatar-upload m-0">
-													<div class="avatar-edit" style="right: 0">
-														<input
-															type="file"
-															id="profileImageField"
-															accept=".png, .jpg, .jpeg"
-															name="profileImg"
-															required
-														/>
-														<label for="profileImageField"
-															><i class="fas fa-pencil-alt"></i
-														></label>
-													</div>
-													<div class="avatar-preview">
-														<div
-															id="profileImagePreview"
-															style="
-																background-image: url(${imgPath}/no-image-found.png);
-															"
-															data-default="${imgPath}/no-image-found.png"
-														></div>
-													</div>
-												</div>
-											</div>
-										</div>
 										<div class="row add-new-employee-form-container">
 											<div class="col-5">
 												<label
 													for="formFileSm"
 													class="form-label"
 													style="font-weight: 600"
-													>Company Name</label
+													>Name</label
 												>
 											</div>
 											<div class="col-1">:</div>
@@ -159,7 +127,7 @@
 													for="formFileSm"
 													class="form-label"
 													style="font-weight: 600"
-													>Company Reg No</label
+													>Company</label
 												>
 											</div>
 											<div class="col-1">:</div>
@@ -175,57 +143,14 @@
 												/>
 											</div>
 										</div>
+
 										<div class="row add-new-employee-form-container">
 											<div class="col-5">
 												<label
 													for="formFileSm"
 													class="form-label"
 													style="font-weight: 600"
-													>Address</label
-												>
-											</div>
-											<div class="col-1">:</div>
-											<div class="col-6">
-												<input
-													class="form-control form-control-sm"
-													id="nameEn"
-													type="text"
-													name="nameEn"
-													autocomplete="off"
-													placeholder="Address"
-													required
-												/>
-											</div>
-										</div>
-										<div class="row add-new-employee-form-container">
-											<div class="col-5">
-												<label
-													for="formFileSm"
-													class="form-label"
-													style="font-weight: 600"
-													>Mobile No</label
-												>
-											</div>
-											<div class="col-1">:</div>
-											<div class="col-6">
-												<input
-													class="form-control form-control-sm"
-													id="nameEn"
-													type="text"
-													name="nameEn"
-													autocomplete="off"
-													placeholder="Mobile No"
-													required
-												/>
-											</div>
-										</div>
-										<div class="row add-new-employee-form-container">
-											<div class="col-5">
-												<label
-													for="formFileSm"
-													class="form-label"
-													style="font-weight: 600"
-													>Registered Date</label
+													>Added Date</label
 												>
 											</div>
 											<div class="col-1">:</div>
@@ -235,6 +160,47 @@
 													id="startDate"
 													class="form-control form-control-sm"
 													placeholder="Start Date"
+												/>
+											</div>
+										</div>
+										<div class="row add-new-employee-form-container">
+											<div class="col-5">
+												<label
+													for="formFileSm"
+													class="form-label"
+													style="font-weight: 600"
+													>Completion Date</label
+												>
+											</div>
+											<div class="col-1">:</div>
+											<div class="col-6">
+												<input
+													type="date"
+													id="startDate"
+													class="form-control form-control-sm"
+													placeholder="Start Date"
+												/>
+											</div>
+										</div>
+										<div class="row add-new-employee-form-container">
+											<div class="col-5">
+												<label
+													for="formFileSm"
+													class="form-label"
+													style="font-weight: 600"
+													>No. of Employees</label
+												>
+											</div>
+											<div class="col-1">:</div>
+											<div class="col-6">
+												<input
+													class="form-control form-control-sm"
+													id="nameEn"
+													type="text"
+													name="nameEn"
+													autocomplete="off"
+													placeholder="No of Employees"
+													required
 												/>
 											</div>
 										</div>
@@ -321,6 +287,6 @@
 
 		<script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
 
-		<script src="${jsPath}/client/client.js"></script>
+		<script src="${jsPath}/projects/projects.js"></script>
 	</body>
 </html>

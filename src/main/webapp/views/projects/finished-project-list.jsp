@@ -6,7 +6,7 @@
 		<%@include file="../layout/header.jsp" %>
 		<link href="../../assets/css/employees.css" rel="stylesheet" />
 
-		<title>Client List</title>
+		<title>Finished Projects List</title>
 
 		<link
 			rel="stylesheet"
@@ -29,31 +29,20 @@
 							<div class="content-card shadow-sm">
 								<div class="row">
 									<div class="col-6">
-										<h5 class="fw-bold mb-3">Client List</h5>
+										<h5 class="fw-bold mb-3">Finished Projects List</h5>
 									</div>
-									<div class="col-6 text-end">
-										<button class="btn btn-sm btn-primary btn-add-employee">
-											<i
-												class="menu-icon mdi mdi-account-multiple-plus-outline"
-												style="color: white; margin: 10px"
-											></i
-											>Add Client
-										</button>
-									</div>
+									<div class="col-6 text-end"></div>
 								</div>
 								<div class="position-relative">
 									<table id="dataTable" class="table table-striped w-100">
 										<thead class="table-heading">
 											<tr>
 												<th>Name</th>
-												<th>Logo</th>
-												<th>Company Reg No</th>
-												<th>Company Address</th>
-												<th>Registere Date</th>
-												<th>Mobile No</th>
-												<th>Added Date</th>
-												<th>No. of Employees</th>
-												<th>No. of Projects</th>
+												<th>Company</th>
+												<th>Date</th>
+												<th>No Of Employees Needed</th>
+												<th>Expected to Completed on</th>
+												<th>Completed Date</th>
 												<th>Action</th>
 											</tr>
 										</thead>
@@ -74,8 +63,8 @@
 
 						<div
 							class="modal fade"
-							id="addCompanyModal"
-							aria-labelledby="addCompanyModal"
+							id="addEmployeeModal"
+							aria-labelledby="addEmployeeModal"
 							aria-hidden="true"
 						>
 							<div class="modal-dialog modal-dialog-centered">
@@ -91,7 +80,7 @@
 										"
 									>
 										<h3 class="modal-title" style="font-weight: 700">
-											Add New Client
+											Add New Employee
 										</h3>
 									</div>
 									<div
@@ -100,8 +89,8 @@
 										style="height: auto; width: auto"
 									>
 										<h4 style="text-align: center">
-											Please Fill THe Above Details of the Company to Add an
-											Client
+											Please Fill THe Above Details of the Employee to Add an
+											Employee
 										</h4>
 
 										<div class="row add-new-employee-form-container">
@@ -137,7 +126,7 @@
 													for="formFileSm"
 													class="form-label"
 													style="font-weight: 600"
-													>Company Name</label
+													>Name</label
 												>
 											</div>
 											<div class="col-1">:</div>
@@ -149,28 +138,6 @@
 													name="nameEn"
 													autocomplete="off"
 													placeholder="Name"
-													required
-												/>
-											</div>
-										</div>
-										<div class="row add-new-employee-form-container">
-											<div class="col-5">
-												<label
-													for="formFileSm"
-													class="form-label"
-													style="font-weight: 600"
-													>Company Reg No</label
-												>
-											</div>
-											<div class="col-1">:</div>
-											<div class="col-6">
-												<input
-													class="form-control form-control-sm"
-													id="nameEn"
-													type="text"
-													name="nameEn"
-													autocomplete="off"
-													placeholder="Company Registration Number"
 													required
 												/>
 											</div>
@@ -216,25 +183,6 @@
 													autocomplete="off"
 													placeholder="Mobile No"
 													required
-												/>
-											</div>
-										</div>
-										<div class="row add-new-employee-form-container">
-											<div class="col-5">
-												<label
-													for="formFileSm"
-													class="form-label"
-													style="font-weight: 600"
-													>Registered Date</label
-												>
-											</div>
-											<div class="col-1">:</div>
-											<div class="col-6">
-												<input
-													type="date"
-													id="startDate"
-													class="form-control form-control-sm"
-													placeholder="Start Date"
 												/>
 											</div>
 										</div>

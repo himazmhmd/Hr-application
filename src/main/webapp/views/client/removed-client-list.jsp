@@ -6,7 +6,7 @@
 		<%@include file="../layout/header.jsp" %>
 		<link href="../../assets/css/employees.css" rel="stylesheet" />
 
-		<title>Removed Employee List</title>
+		<title>Removed Client List</title>
 
 		<link
 			rel="stylesheet"
@@ -29,7 +29,7 @@
 							<div class="content-card shadow-sm">
 								<div class="row">
 									<div class="col-6">
-										<h5 class="fw-bold mb-3">Removed Employees List</h5>
+										<h5 class="fw-bold mb-3">Removed Client List</h5>
 									</div>
 									<div class="col-6 text-end"></div>
 								</div>
@@ -38,11 +38,16 @@
 										<thead class="table-heading">
 											<tr>
 												<th>Name</th>
-												<th>Image</th>
-												<th>Address</th>
-												<th>Joint Date</th>
+												<th>Logo</th>
+												<th>Company Reg No</th>
+												<th>Company Address</th>
+												<th>Registere Date</th>
+												<th>Mobile No</th>
+												<th>Added Date</th>
 												<th>Removed Date</th>
 												<th>Reason</th>
+												<th>No. of Employees</th>
+												<th>No. of Projects</th>
 												<th>Action</th>
 											</tr>
 										</thead>
@@ -269,6 +274,6 @@
 
 		<script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
 
-		<script src="${jsPath}/employees/employees.js"></script>
+		<script src="${jsPath}/client/client.js"></script>
 	</body>
 </html>
